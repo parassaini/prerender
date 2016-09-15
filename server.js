@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var prerender = require('./lib');
-
+var Promise = require('es6-promise').Promise;
 var server = prerender({
     workers: process.env.PRERENDER_NUM_WORKERS,
     iterations: process.env.PRERENDER_NUM_ITERATIONS
